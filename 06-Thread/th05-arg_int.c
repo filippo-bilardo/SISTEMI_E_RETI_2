@@ -1,6 +1,6 @@
 //==========================================================================================
 //
-// Project:  th05-cast_arg_int.c
+// Project:  th05-arg_int.c
 // Date:     31/03/21
 // Author:   Filippo Bilardo
 //
@@ -8,7 +8,7 @@
 //
 //  I parametri vengono passati come puntatori a void (void* par)
 //  Quindi prima di passarli al thread da creare va fatto l'opportuno casting.
-//  gcc -pthread th05-cast_arg_int.c
+//  gcc -pthread th05-arg_int.c
 //
 // Ver   Date        Comment
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
