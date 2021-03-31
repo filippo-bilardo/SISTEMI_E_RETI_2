@@ -8,6 +8,7 @@
 //
 //  Creazione di due thread in aggiunta al mainthread quando però termina il mainthread  
 //  termina l'intero programma, quindi l'esecuzione dei thread viene interrotta. 
+//  c99 -pthread th02-wrong.c
 //
 // Ver   Date        Comment
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
