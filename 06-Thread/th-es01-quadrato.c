@@ -6,8 +6,8 @@
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-//  Al main thread viene passato come parametro un numero, quindi, viente creato un thread 
-//  per calcolare il quatrato del numero.
+//  Al main thread viene passato come parametro un numero, quindi, viene creato un thread 
+//  per calcolare il quadrato del numero.
 //  gcc -pthread th-es01-quadrato.c -o quadrato
 //
 // Ver   Date        Comment
