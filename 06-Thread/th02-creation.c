@@ -28,10 +28,10 @@ int main() {
   pthread_t th1, th2;
 
   pthread_create(&th1, NULL, threadSimple, "thread01");
-  printf("main thread - creato thread01 tid=%d\n",th1);
+  printf("main thread - creato thread01 tid=%d\n",(int)th1);
 
   pthread_create(&th2, NULL, threadCreator, "tcreator");
-  printf("main thread - creato threadCreator tid=%d\n",th2);
+  printf("main thread - creato threadCreator tid=%d\n",(int)th2);
 
   sleep(1); //Aspetto che tutti i thread vengano eseguiti
   printf("Main thread terminato.\n");
@@ -45,5 +45,5 @@ void *threadCreator(void *vargp) {
   printf("Thread threadCreator Creato!...\n");
   pthread_t tid;
   pthread_create(&tid, NULL, threadSimple, "thread02");
-  printf("threadCreator - creato thread02 tid=%d\n",tid);
+  printf("threadCreator - creato thread02 tid=%d\n",(int)tid);
 }
