@@ -35,19 +35,19 @@ int main()
   a=10; // Modifica della variabile dal mainThread
   
   err=pthread_create(&th1, NULL, th_countdown, "t1");
-  if (err<0) {
+  if (err!=0) {
     perror("pthread_create error for thread th1\n");
     exit (1);
   } else {
-    printf("main thread - creato thread01 tid=%d\n",th1);
+    printf("main thread - creato thread01 tid=%d\n",(int)th1);
   }
   
   err=pthread_create(&th2, NULL, th_countdown, "t2");
-  if (err<0) {
+  if (err!=0) {
     perror("pthread_create error for thread th2\n");
     exit (2);
   } else {
-    printf("main thread - creato thread02 tid=%d\n",th2);
+    printf("main thread - creato thread02 tid=%d\n",(int)th2);
   }
   
   sleep(6);
