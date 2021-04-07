@@ -30,7 +30,7 @@ int main()
   pthread_t th1, th2;
   
   err=pthread_create(&th1, NULL, th_countdown, "t1");
-  if (err<0) {
+  if (err!=0) {
     perror("pthread_create error for thread th1\n");
     exit (1);
   } else {
@@ -38,7 +38,7 @@ int main()
   }
   
   err=pthread_create(&th2, NULL, th_countdown, "t2");
-  if (err<0) {
+  if (err!=0) {
     perror("pthread_create error for thread th2\n");
     exit (2);
   } else {
