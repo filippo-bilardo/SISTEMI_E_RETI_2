@@ -35,12 +35,15 @@ int main() {
   // Creates the thread
   pthread_create(&tid2, NULL, threadFunc, (void*)233);
   // Creates the thread
-  pthread_create(&tid3, NULL, threadFunc, (void*)'a');
+  pthread_create(&tid3, NULL, threadFunc, (void*)&data);
+  // Creates the thread
+  pthread_create(&tid4, NULL, threadFunc, (void*)'a');
   
   // Attendo la terminazione dei threads
   pthread_join(tid1, NULL);
   pthread_join(tid2, NULL);
   pthread_join(tid3, NULL);
+  pthread_join(tid4, NULL);
 }
 
 //------------------------------------------------------------------------------------------
