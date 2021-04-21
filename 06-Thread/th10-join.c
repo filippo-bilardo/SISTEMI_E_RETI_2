@@ -53,12 +53,12 @@ int main()
   /* the process and all threads before the threads have completed.   */
   printf("main thread - attendo la terminazione dei thread creati\n");
   err=pthread_join(thID1, NULL);
-  if(err<0) {
+  if(err!=0) {
     perror("join fallito\n");
     exit (3);
   }
   err=pthread_join(thID2, NULL);
-  if(err<0) {
+  if(err!=0) {
     perror("join fallito\n");
     exit (3);
   }
