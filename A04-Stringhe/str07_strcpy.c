@@ -1,4 +1,4 @@
-/* es07_strcpy.c - © FB - 08/12/20
+/* str07_strcpy.c - © FB - 08/12/20
  * Copia di una stringa
  */
 #include <stdio.h>   //printf
