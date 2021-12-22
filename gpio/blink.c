@@ -38,6 +38,6 @@ int main(void)
     delay(500);
   }
   
-  //Codice 
+  //Codice non raggiungibile
   return 0;
 }
