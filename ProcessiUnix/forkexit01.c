@@ -9,6 +9,6 @@
 
 int main(int argc, char **argv) {
   
-  exit(253);
+  exit(254);
 }
 
